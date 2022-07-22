@@ -94,14 +94,21 @@ const Menu = ({ darkMode, setDarkMode }) => {
 					<AiFillHome />
 					Home
 				</Item>
-				<Item>
-					<MdOutlineExplore />
-					Explore
-				</Item>
-				<Item>
-					<MdOutlineSubscriptions />
-					Subscriptions
-				</Item>
+				<Link to='trends' style={{ textDecoration: 'none', color: 'inherit' }}>
+					<Item>
+						<MdOutlineExplore />
+						Explore
+					</Item>
+				</Link>
+				<Link
+					to='subscriptions'
+					style={{ textDecoration: 'none', color: 'inherit' }}
+				>
+					<Item>
+						<MdOutlineSubscriptions />
+						Subscriptions
+					</Item>
+				</Link>
 				<Hr />
 				<Item>
 					<MdOutlineVideoLibrary />
